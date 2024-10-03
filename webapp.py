@@ -19,146 +19,146 @@ def render_page1():
     adventure = request.args['adventure']
     wolfScore = 0
     polarbearScore = 0
-    monkeyScore = 0
+    capybaraScore = 0
     beaverScore = 0
     slothScore = 0
-    elephantScore = 0
-    goatScore = 0
-    bearScore = 0
-    dogScore = 0
+    kangarooScore = 0
+    cougarScore = 0
+    arcticfoxScore = 0
+    wildboarScore = 0
     
     if freetime_preferences == 'Exploring new places': 
         wolfScore ++
-        elephantScore ++
+        kangarooScore ++
     if freetime_preferences == 'Relaxing in the sun':
         polarbearScore ++
         slothScore ++
-        bearScore ++
+        arcticfoxScore ++
     if freetime_preferences == 'Socializing with friends':
-        dogScore ++
-        goatScore ++
+        wildboarScore ++
+        cougarScore ++
     if freetime_preferences == 'Working on a project':
         beaverScore ++
-        monkeyScore ++
+        capybaraScore ++
         
         
     if personality == 'Adventurous and spontaneous':
-        monkeyScore ++
-        elephantScore ++
+        capybaraScore ++
+        kangarooScore ++
     if personality == 'Calm and nurturing':
         beaverScore ++
         slothScore ++
     if personality == 'Playful and energetic':
         polarbearScore ++
-        dogScore ++
+        wildboarScore ++
     if personality == 'Loyal and protective':
         wolfScore ++
-        goatScore ++
-        bearScore ++
+        cougarScore ++
+        arcticfoxScore ++
         
         
     if stress_handling == 'Go for a run or exercise':
         wolfScore ++
-        bearScore ++
+        arcticfoxScore ++
     if stress_handling == 'Meditate or take a nap':
         polarbearScore ++
         slothScore ++
-        elephantScore ++
+        kangarooScore ++
     if stress_handling == 'Hang out with friends':
         beaverScore ++
-        monkeyScore ++
+        capybaraScore ++
     if stress_handling == 'Take charge and tackle the problem':
-        dogScore ++
-        goatScore ++
+        wildboarScore ++
+        cougarScore ++
         
         
     if ideal_habitat == 'Mountains and forests':
         beaverScore ++
-        goatScore ++
+        cougarScore ++
         wolfScore ++
     if ideal_habitat == 'Jungles and swamps':
         slothScore ++
-        monkeyScore ++
+        capybaraScore ++
     if ideal_habitat == 'Desert and flatland':
-        elephantScore ++
-        dogScore ++
+        kangarooScore ++
+        wildboarScore ++
     if ideal_habitat == 'Cold and snowy':
         polarbearScore ++
-        bearScore ++
+        arcticfoxScore ++
         
         
     if teamwork_thoughts == 'I prefer to go solo':
         wolfScore ++
-        bearScore ++
-        goatScore ++
+        arcticfoxScore ++
+        cougarScore ++
     if teamwork_thoughts == 'I love collaborating with others':
         beaverScore ++
         polarbearScore ++
     if teamwork_thoughts == 'I enjoy leading the group':
-        monkeyScore ++
-        dogScore ++
+        capybaraScore ++
+        wildboarScore ++
     if teamwork_thoughts == 'I am a supportive team player':
-        elephantScore ++
+        kangarooScore ++
         slothScore ++
         
         
     if food_preference == 'Hearty and filling':
-        bearScore ++
-        dogScore ++
+        arcticfoxScore ++
+        wildboarScore ++
     if food_preference == 'Fresh and healthy':
         beaverScore ++
-        elephantScore ++
+        kangarooScore ++
     if food_preference == 'Sweet and indulgent':
-        monkeyScore ++
+        capybaraScore ++
         wolfScore ++
     if food_preference == 'Simple and classic':
         polarbearScore ++
         slothScore ++
-        goatScore ++
+        cougarScore ++
         
         
     if season_preference == 'Spring':
-        elephantScore ++
-        monkeyScore ++
+        kangarooScore ++
+        capybaraScore ++
         slothScore ++
     if season_preference == 'Summer':
         wolfScore ++
-        dogScore ++
+        wildboarScore ++
     if season_preference == 'Fall':
-        goatScore ++
+        cougarScore ++
         beaverScore ++
     if season_preference == 'Winter':
-        bearScore ++
+        arcticfoxScore ++
         polarbearScore ++
         
         
     if affection == 'Through playful teasing':
-        bearScore ++
-        dogScore ++
+        arcticfoxScore ++
+        wildboarScore ++
         beaverScore ++
     if affection == 'With gentle gestures':
-        elephantScore ++
+        kangarooScore ++
         slothScore ++
     if affection == 'By spending quality time':
-        monkeyScore ++
+        capybaraScore ++
         polarbearScore ++
     if affection == 'By protecting and supporting':
         wolfScore ++
-        goatScore ++
+        cougarScore ++
         
         
     if adventure == 'Hiking in the wilderness':
-        goatScore ++
-        dogScore ++
+        cougarScore ++
+        wildboarScore ++
     if adventure == 'Relaxing by the water':
-        bearScore ++
+        arcticfoxScore ++
         beaverScore ++
         slothScore ++
     if adventure == 'Exploring a new environment':
         wolfScore ++
-        elephantScore ++
+        kangarooScore ++
     if adventure == 'Attending a fun gathering':
-        monkeyScore ++
+        capybaraScore ++
         polarbearScore ++
     return render_template('page1.html')
     
