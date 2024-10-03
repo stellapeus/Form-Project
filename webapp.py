@@ -28,140 +28,172 @@ def render_page1():
     wildboarScore = 0
     
     if freetime_preferences == 'Exploring new places': 
-        wolfScore ++
-        kangarooScore ++
+        wolfScore = wolfScore +1
+        kangarooScore = kangarooScore +1
     if freetime_preferences == 'Relaxing in the sun':
-        polarbearScore ++
-        slothScore ++
-        arcticfoxScore ++
+        polarbearScore = polarbearScore +1
+        slothScore = slothScore +1
+        arcticfoxScore = arcticfoxScore +1
     if freetime_preferences == 'Socializing with friends':
-        wildboarScore ++
-        cougarScore ++
+        wildboarScore = wildboarScore +1
+        cougarScore = cougarScore +1
     if freetime_preferences == 'Working on a project':
-        beaverScore ++
-        capybaraScore ++
+        beaverScore = beaverScore +1
+        capybaraScore = capybaraScore +1
         
         
     if personality == 'Adventurous and spontaneous':
-        capybaraScore ++
-        kangarooScore ++
+        capybaraScore = capybaraScore +1
+        kangarooScore = kangarooScore +1
     if personality == 'Calm and nurturing':
-        beaverScore ++
-        slothScore ++
+        beaverScore = beaverScore +1
+        slothScore = slothScore +1
     if personality == 'Playful and energetic':
-        polarbearScore ++
-        wildboarScore ++
+        polarbearScore = polarbearScore +1
+        wildboarScore = wildboarScore +1
     if personality == 'Loyal and protective':
-        wolfScore ++
-        cougarScore ++
-        arcticfoxScore ++
+        wolfScore= wolfScore +1
+        cougarScore = cougarScore +1
+        arcticfoxScore = arcticfoxScore +1
         
         
     if stress_handling == 'Go for a run or exercise':
-        wolfScore ++
-        arcticfoxScore ++
+        wolfScore= wolfScore +1
+        arcticfoxScore = arcticfoxScore +1
     if stress_handling == 'Meditate or take a nap':
-        polarbearScore ++
-        slothScore ++
-        kangarooScore ++
+        polarbearScore = polarbearScore +1
+        slothScore = slothScore +1
+        kangarooScore = kangarooScore +1
     if stress_handling == 'Hang out with friends':
-        beaverScore ++
-        capybaraScore ++
+        beaverScore = beaverScore +1
+        capybaraScore = capybaraScore +1
     if stress_handling == 'Take charge and tackle the problem':
-        wildboarScore ++
-        cougarScore ++
+        wildboarScore = wildboarScore +1
+        cougarScore = cougarScore +1
         
         
     if ideal_habitat == 'Mountains and forests':
-        beaverScore ++
-        cougarScore ++
-        wolfScore ++
+        beaverScore = beaverScore +1
+        cougarScore = cougarScore +1
+        wolfScore= wolfScore +1
     if ideal_habitat == 'Jungles and swamps':
-        slothScore ++
-        capybaraScore ++
+        slothScore = slothScore +1
+        capybaraScore = capybaraScore +1
     if ideal_habitat == 'Desert and flatland':
-        kangarooScore ++
-        wildboarScore ++
+        kangarooScore = kangarooScore +1
+        wildboarScore = wildboarScore +1
     if ideal_habitat == 'Cold and snowy':
-        polarbearScore ++
-        arcticfoxScore ++
+        polarbearScore = polarbearScore +1
+        arcticfoxScore = arcticfoxScore +1
         
         
     if teamwork_thoughts == 'I prefer to go solo':
-        wolfScore ++
-        arcticfoxScore ++
-        cougarScore ++
+        wolfScore= wolfScore +1
+        arcticfoxScore = arcticfoxScore +1
+        cougarScore = cougarScore +1
     if teamwork_thoughts == 'I love collaborating with others':
-        beaverScore ++
-        polarbearScore ++
+        beaverScore = beaverScore +1
+        polarbearScore = polarbearScore +1
     if teamwork_thoughts == 'I enjoy leading the group':
-        capybaraScore ++
-        wildboarScore ++
+        capybaraScore = capybaraScore +1
+        wildboarScore = wildboarScore +1
     if teamwork_thoughts == 'I am a supportive team player':
-        kangarooScore ++
-        slothScore ++
+        kangarooScore = kangarooScore +1
+        slothScore = slothScore+1
         
         
     if food_preference == 'Hearty and filling':
-        arcticfoxScore ++
-        wildboarScore ++
+        arcticfoxScore = arcticfoxScore +1
+        wildboarScore = wildboarScore +1
     if food_preference == 'Fresh and healthy':
-        beaverScore ++
-        kangarooScore ++
+        beaverScore = beaverScore +1
+        kangarooScore = kangarooScore +1
     if food_preference == 'Sweet and indulgent':
-        capybaraScore ++
-        wolfScore ++
+        capybaraScore = capybaraScore +1
+        wolfScore= wolfScore +1
     if food_preference == 'Simple and classic':
-        polarbearScore ++
-        slothScore ++
-        cougarScore ++
+        polarbearScore = polarbearScore +1
+        slothScore = slothScore+1
+        cougarScore = cougarScore +1
         
         
     if season_preference == 'Spring':
-        kangarooScore ++
-        capybaraScore ++
-        slothScore ++
+        kangarooScore = kangarooScore +1
+        capybaraScore = capybaraScore +1
+        slothScore = slothScore +1
     if season_preference == 'Summer':
-        wolfScore ++
-        wildboarScore ++
+        wolfScore= wolfScore +1
+        wildboarScore = wildboarScore +1
     if season_preference == 'Fall':
-        cougarScore ++
-        beaverScore ++
+        cougarScore = cougarScore +1
+        beaverScore = beaverScore +1
     if season_preference == 'Winter':
-        arcticfoxScore ++
-        polarbearScore ++
+        arcticfoxScore = arcticfoxScore +1
+        polarbearScore = polarbearScore +1
         
         
     if affection == 'Through playful teasing':
-        arcticfoxScore ++
-        wildboarScore ++
-        beaverScore ++
+        arcticfoxScore = arcticfoxScore +1
+        wildboarScore = wildboarScore +1
+        beaverScore = beaverScore +1
     if affection == 'With gentle gestures':
-        kangarooScore ++
-        slothScore ++
+        kangarooScore = kangarooScore +1
+        slothScore = slothScore +1
     if affection == 'By spending quality time':
-        capybaraScore ++
-        polarbearScore ++
+        capybaraScore = capybaraScore +1
+        polarbearScore = polarbearScore +1
     if affection == 'By protecting and supporting':
-        wolfScore ++
-        cougarScore ++
+        wolfScore= wolfScore +1
+        cougarScore = cougarScore +1
         
         
     if adventure == 'Hiking in the wilderness':
-        cougarScore ++
-        wildboarScore ++
+        cougarScore = cougarScore +1
+        wildboarScore = wildboarScore +1
     if adventure == 'Relaxing by the water':
-        arcticfoxScore ++
-        beaverScore ++
-        slothScore ++
+        arcticfoxScore = arcticfoxScore +1
+        beaverScore = beaverScore +1
+        slothScore = slothScore+1
     if adventure == 'Exploring a new environment':
-        wolfScore ++
-        kangarooScore ++
+        wolfScore= wolfScore +1
+        kangarooScore = kangarooScore +1
     if adventure == 'Attending a fun gathering':
-        capybaraScore ++
-        polarbearScore ++
-    return render_template('page1.html')
-    
+        capybaraScore = capybaraScore +1
+        polarbearScore = polarbearScore +1
+    animal = ""   
+    x = max(cougarScore, wildboarScore, arcticfoxScore, beaverScore, slothScore, wolfScore, kangarooScore, capybaraScore, polarbearScore)
+    if cougarScore == x:
+        animal = "You are a cougar!"
+        animalImage = "/static/cougar.webp"
+    if wildboarScore == x:
+        animal = "You are a wildboar!"
+        animalImage = "/static/wildboar.webp"
+    if arcticfoxScore == x:
+        animal = "You are an arctic fox!"
+        animalImage = "/static/arcticfox.jpg"
+    if beaverScore == x:
+        animal = "You are a beaver!"
+        animalImage = "/static/beaver.jpg"
+    if slothScore == x:
+        animal = "You are a sloth!"
+        animalImage = "/static/sloth.jpg"
+    if wolfScore == x:
+        animal = "You are a wolf!"
+        animalImage = "/static/wolf.webp"
+    if kangarooScore == x:
+        animal = "You are a kangaroo!"
+        animalImage = "/static/kangaroo.jpg"
+    if capybaraScore == x:
+        animal = "You are a capybara!"
+        animalImage = "/static/capybara.jpg"
+    if polarbearScore == x:
+        animal = "You are a polar bear!"
+        animalImage = "/static/polarbear.jpg"
+        
+    print(animal)
+    return render_template('page1.html', animal = animal, photo = animalImage)
+   
+   
 if __name__=="__main__":
     app.run(debug=True)
     
