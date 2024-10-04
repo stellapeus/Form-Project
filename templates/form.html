@@ -4,90 +4,90 @@
 <title>What Kind of Animal Are You?</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	 <link rel="stylesheet" href="/static/style.css">
 <script src="static/script.js"></script>
 </head>
 <body>
-<h1>What Animal Are You?</h1>
+<h1><b>What Animal Are You?</b></h1>
 <form action="/response">
 <br>
-<p><b>How do you like to spend your free time?</b></p>
-	<input type="radio" id="Exploring new places" name="freetime_preferences" value="Exploring new places">
-  <label for="Exploring new places">Exploring new places</label><br>
-	<input type="radio" id="Relaxing in the sun" name="freetime_preferences" value="Relaxing in the sun">
-  <label for="Relaxing in the sun">Relaxing in the sun</label><br>
-	<input type="radio" id="Socializing with friends" name="freetime_preferences" value="Socializing with friends">
-  <label for="Socializing with friends">Socializing with friends</label><br>
-  <input type="radio" id="Working on a project" name="freetime_preferences" value="Working on a project">
-  <label for="Working on a project">Working on a project</label><br>
+<p class="question"><b>How do you like to spend your free time?</b></p>
+	<input type="radio" id="Exploringnewplaces" name="freetime_preferences" value="Exploring new places" required>
+  <label for="Exploringnewplaces">Exploring new places</label><br>
+	<input type="radio" id="Relaxinginthesun" name="freetime_preferences" value="Relaxing in the sun">
+  <label for="Relaxinginthesun">Relaxing in the sun</label><br>
+	<input type="radio" id="Socializingwithfriends" name="freetime_preferences" value="Socializing with friends">
+  <label for="Socializingwithfriends">Socializing with friends</label><br>
+  <input type="radio" id="Workingonaproject" name="freetime_preferences" value="Working on a project">
+  <label for="Workingonaproject">Working on a project</label><br>
  
 <br>
-<p><b>What best describes your personality</b></p>
-	<input type="radio" id="Adventurous and spontaneous" name="personality" value="Adventurous and spontaneous">
-  <label for="Adventurous and spontaneous">Adventurous and spontaneous</label><br>
-	<input type="radio" id="Calm and nurturing" name="personality" value="Calm and nurturing">
-  <label for="Calm and nurturing">Calm and nurturing</label><br>
-	<input type="radio" id="Playful and energetic" name="personality" value="Playful and energetic">
-  <label for="Playful and energetic">Playful and energetic</label><br>
-  <input type="radio" id="Loyal and protective" name="personality" value="Loyal and protective">
-  <label for="Loyal and protective">Loyal and protective</label><br>
+<p class="question"><b>What best describes your personality?</b></p>
+	<input type="radio" id="Adventurousandspontaneous" name="personality" value="Adventurous and spontaneous" required>
+  <label for="Adventurousandspontaneous">Adventurous and spontaneous</label><br>
+	<input type="radio" id="Calmandnurturing" name="personality" value="Calm and nurturing">
+  <label for="Calmandnurturing">Calm and nurturing</label><br>
+	<input type="radio" id="Playfulandenergetic" name="personality" value="Playful and energetic">
+  <label for="Playfulandenergetic">Playful and energetic</label><br>
+  <input type="radio" id="Loyalandprotective" name="personality" value="Loyal and protective">
+  <label for="Loyalandprotective">Loyal and protective</label><br>
 
 <br>
-<p><b>How do you handle stress?</b></p>
+<p class="question"><b>How do you handle stress?</b></p>
 
 
-  <input type="radio" id="Go for a run or exercise" name="stress_handling" value="Go for a run or exercise">
-  <label for="Go for a run or exercise">Go for a run or exercise</label><br>
-  <input type="radio" id="Meditate or take a nap" name="stress_handling" value="Meditate or take a nap">
-  <label for="Meditate or take a nap">Meditate or take a nap</label><br>
-  <input type="radio" id="Hang out with friends" name="stress_handling" value="Hang out with friends">
-  <label for="Hang out with friends">Hang out with friends</label><br>
-  <input type="radio" id="Take charge and tackle the problem" name="stress_handling" value="Take charge and tackle the problem">
-  <label for="Take charge and tackle the problem">Take charge and tackle the problem</label><br>
-
-<br>
-<p><b>What is your ideal habitat?</b></p>
-
-  <input type="radio" id="Mountains and forests" name="ideal_habitat" value="Mountains and forests">
-  <label for="Mountains and forests">Mountains and forests</label><br>
-  <input type="radio" id="Jungles and swamps" name="ideal_habitat" value="Jungles and swamps">
-  <label for="Jungles and swamps">Jungles and swamps</label><br>
-  <input type="radio" id="Desert and flatland" name="ideal_habitat" value="Desert and flatland">
-  <label for="Desert and flatland">Desert and flatland</label><br>
-  <input type="radio" id="Cold and snowy" name="ideal_habitat" value="Cold and snowy">
-  <label for="Cold and snowy">Cold and snowy</label><br>
+  <input type="radio" id="Goforarunorexercise" name="stress_handling" value="Go for a run or exercise" required>
+  <label for="Goforarunorexercise">Go for a run or exercise</label><br>
+  <input type="radio" id="Meditateortakeanap" name="stress_handling" value="Meditate or take a nap">
+  <label for="Meditateortakeanap">Meditate or take a nap</label><br>
+  <input type="radio" id="Hangoutwithfriends" name="stress_handling" value="Hang out with friends">
+  <label for="Hangoutwithfriends">Hang out with friends</label><br>
+  <input type="radio" id="Takechargeandtackletheproblem" name="stress_handling" value="Take charge and tackle the problem">
+  <label for="Takechargeandtackletheproblem">Take charge and tackle the problem</label><br>
 
 <br>
-<p><b>How do you feel about teamwork?</b></p>
+<p class="question"><b>What is your ideal habitat?</b></p>
+
+  <input type="radio" id="Mountainsandforests" name="ideal_habitat" value="Mountains and forests" required>
+  <label for="Mountainsandforests">Mountains and forests</label><br>
+  <input type="radio" id="Junglesandswamps" name="ideal_habitat" value="Jungles and swamps">
+  <label for="Junglesandswamps">Jungles and swamps</label><br>
+  <input type="radio" id="Desertandflatland" name="ideal_habitat" value="Desert and flatland">
+  <label for="Desertandflatland">Desert and flatland</label><br>
+  <input type="radio" id="Coldandsnowy" name="ideal_habitat" value="Cold and snowy">
+  <label for="Coldandsnowy">Cold and snowy</label><br>
+
+<br>
+<p class="question"><b>How do you feel about teamwork?</b></p>
 
 
-  <input type="radio" id="I prefer to got solo" name="teamwork_thoughts" value="I prefer to go solo">
-  <label for="I prefer to got solo">I prefer to got solo</label><br>
-  <input type="radio" id="I love collaborating with others" name="teamwork_thoughts" value="I love collaborating with others">
-  <label for="I love collaborating with others">I love collaborating with others</label><br>
-  <input type="radio" id="I enjoy leading the group" name="teamwork_thoughts" value="I enjoy leading the group">
-  <label for="I enjoy leading the group">I enjoy leading the group</label><br>
-  <input type="radio" id="I'm a supportive team player" name="teamwork_thoughts" value="I'm a supportive team player">
-  <label for="I'm a supportive team player">I'm a supportive team player</label><br>
+  <input type="radio" id="Iprefertogotsolo" name="teamwork_thoughts" value="I prefer to go solo" required>
+  <label for="Iprefertogotsolo">I prefer to got solo</label><br>
+  <input type="radio" id="Ilovecollaboratingwithothers" name="teamwork_thoughts" value="I love collaborating with others">
+  <label for="Ilovecollaboratingwithothers">I love collaborating with others</label><br>
+  <input type="radio" id="Ienjoyleadingthegroup" name="teamwork_thoughts" value="I enjoy leading the group">
+  <label for="Ienjoyleadingthegroup">I enjoy leading the group</label><br>
+  <input type="radio" id="I'masupportiveteamplayer" name="teamwork_thoughts" value="I'm a supportive team player">
+  <label for="I'masupportiveteamplayer">I'm a supportive team player</label><br>
  
 <br>
-<p><b>What type of food do you prefer?</b></p>
+<p class="question"><b>What type of food do you prefer?</b></p>
 
 
-  <input type="radio" id="Hearty and filling" name="food_preference" value="Hearty and filling">
-  <label for="Hearty and filling">Hearty and filling</label><br>
-  <input type="radio" id="Fresh and healthy" name="food_preference" value="Fresh and healthy">
-  <label for="Fresh and healthy">Fresh and healthy</label><br>
-  <input type="radio" id="Sweet and indulgent" name="food_preference" value="Sweet and indulgent">
-  <label for="Sweet and indulgent">Sweet and indulgent</label><br>
-  <input type="radio" id="Simple and classic" name="food_preference" value="Simple and classic">
-  <label for="Simple and classic">Simple and classic</label><br>
+  <input type="radio" id="Heartyandfilling" name="food_preference" value="Hearty and filling" required>
+  <label for="Heartyandfilling">Hearty and filling</label><br>
+  <input type="radio" id="Freshandhealthy" name="food_preference" value="Fresh and healthy">
+  <label for="Freshandhealthy">Fresh and healthy</label><br>
+  <input type="radio" id="Sweetandindulgent" name="food_preference" value="Sweet and indulgent">
+  <label for="Sweetandindulgent">Sweet and indulgent</label><br>
+  <input type="radio" id="Simpleandclassic" name="food_preference" value="Simple and classic">
+  <label for="Simpleandclassic">Simple and classic</label><br>
  
 <br>
-<p><b>What's your favorite time of year?</b></p>
+<p class="question"><b>What's your favorite time of year?</b></p>
 
 
-  <input type="radio" id="Spring" name="season_preference" value="Spring">
+  <input type="radio" id="Spring" name="season_preference" value="Spring" required>
   <label for="Spring">Spring</label><br>
   <input type="radio" id="Summer" name="season_preference" value="Summer">
   <label for="Summer">Summer</label><br>
@@ -97,29 +97,30 @@
   <label for="Winter">Winter</label><br>
 
 <br>
-<p><b>How do you show affection?</b></p>
+<p class="question"><b>How do you show affection?</b></p>
 
-  <input type="radio" id="Through playful teasing" name="affection" value="Through playful teasing">
-  <label for="Through playful teasing">Through playful teasing</label><br>
-  <input type="radio" id="With gentle gestures" name="affection" value="With gentle gestures">
-  <label for="With gentle gestures">With gentle gestures</label><br>
-  <input type="radio" id="By spending quality time" name="affection" value="By spending quality time">
-  <label for="By spending quality time">By spending quality time</label><br>
-  <input type="radio" id="By protecing and supporting" name="affection" value="By protecing and supporting">
-  <label for="By protecing and supporting">By protecing and supporting</label><br>
+  <input type="radio" id="Throughplayfulteasing" name="affection" value="Through playful teasing" required>
+  <label for="Throughplayfulteasing">Through playful teasing</label><br>
+  <input type="radio" id="Withgentlegestures" name="affection" value="With gentle gestures">
+  <label for="Withgentlegestures">With gentle gestures</label><br>
+  <input type="radio" id="Byspendingqualitytime" name="affection" value="By spending quality time">
+  <label for="Byspendingqualitytime">By spending quality time</label><br>
+  <input type="radio" id="Byprotecingandsupporting" name="affection" value="By protecing and supporting">
+  <label for="Byprotecingandsupporting">By protecing and supporting</label><br>
 
 <br>
-<p><b>What's your ideal adventure?</b></p>
+<p class="question"><b>What's your ideal adventure?</b></p>
 
 
-  <input type="radio" id="Hiking in the wilderness" name="adventure" value="Hiking in the wilderness">
-  <label for="Hiking in the wilderness">Hiking in the wilderness</label><br>
-  <input type="radio" id="Relaxing by the water" name="adventure" value="Relaxing by the water">
-  <label for="Relaxing by the water">Relaxing by the water</label><br>
-  <input type="radio" id="Exploring a new city" name="adventure" value="Exploring a new city">
-  <label for="Exploring a new city">Exploring a new city</label><br>
-  <input type="radio" id="Attending a fun gathering" name="adventure" value="Attending a fun gathering">
-  <label for="Attending a fun gathering">Attending a fun gathering</label><br>
+  <input type="radio" id="Hikinginthewilderness" name="adventure" value="Hiking in the wilderness" required>
+  <label for="Hikinginthewilderness">Hiking in the wilderness</label><br>
+  <input type="radio" id="Relaxingbythewater" name="adventure" value="Relaxing by the water">
+  <label for="Relaxingbythewater">Relaxing by the water</label><br>
+  <input type="radio" id="Exploringanewcity" name="adventure" value="Exploring a new city">
+  <label for="Exploringanewcity">Exploring a new city</label><br>
+  <input type="radio" id="Attendingafungathering" name="adventure" value="Attending a fun gathering">
+  <label for="Attendingafungathering">Attending a fun gathering</label>
+	<br>
 <button type="submit" class="btn btn-success">Submit</button>
 </form> 
 <br>
